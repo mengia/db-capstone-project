@@ -1,0 +1,5 @@
+INSERT INTO LittleLemonDB.BookingS VALUES (11,'2024-05-11', 11, 1,2,1);
+INSERT INTO LittleLemonDB.BookingS VALUES (12,'2024-05-12', 12, 2,3,2);
+INSERT INTO LittleLemonDB.BookingS VALUES (13,'2024-05-13', 13, 3,4,3);
+INSERT INTO LittleLemonDB.BookingS VALUES (14,'2024-05-14', 14, 4,5,4);
+INSERT INTO LittleLemonDB.BookingS VALUES (15,'2024-05-15', 15, 5,6,5);

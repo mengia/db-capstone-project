@@ -1,0 +1,21 @@
+import mysql.connector as connector
+
+connection = connector.connect(user = "mengia", password = "admin1234!", db = "LittleLemonDB");
+
+cursor = connection.cursor()
+show_query_level = "SHOW TABLES"
+cursor.execute(show_query_level)
+
+
+for tables in cursor:
+    print(tables)
+
+promotion_query = """SELECT CONCAT(FirstName, " ", LastName) as "Full Name", PhoneNumber, TotalCost
+FROM Customers
+INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+WHERE TotalCost > 60""";
+
+cursor.execute(promotion_query);
+
+for customer in cursor:
+    print(customer)
